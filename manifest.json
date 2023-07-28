@@ -1,0 +1,24 @@
+{
+    "manifest_version": 2,
+    "name": "OrganOngle",
+    "version": "1.0",
+    "description": "Regroupe les onglets ouverts par domaine, en grille, et permet de les fermer à la volée.",
+    "permissions": [
+      "tabs",
+      "activeTab",
+      "downloads"
+    ],
+    "browser_action": {
+      "default_icon": {
+        "48": "icons/icon.png"
+      },
+      "default_title": "OrganOngle",
+      "default_popup": "popup/popup.html"
+    },
+      "background": {
+      "scripts": ["background.js"]
+    },
+    "icons": {
+      "48": "icons/icon.png"
+    }
+  }

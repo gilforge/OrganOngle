@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    background-color: #f9f9f9;
+    margin: 10px;
+    padding: 0;
+    min-width: 280px;
+    width: 700px;
+    height: 600px;
+}
+
+h1 {
+    background-color: #4a90e2;
+    color: white;
+    padding: 10px 15px;
+    margin: 0;
+    font-size: 20px;
+}
+
+h2 {
+    color: #4a90e2;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    display: none;
+    /* Use CSS grid for the tab list */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+li {
+    border: 1px solid #ddd;
+    padding: 10px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    position: relative; /* Add this line */
+}
+
+li img {
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+}
+
+.closeButton {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #f44336;
+    color: white;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+li span {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}

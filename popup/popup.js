@@ -23,7 +23,7 @@ const groupTabs = (tabs) => {
 const displayGroupedTabs = (groupedTabs) => {
     const container = document.getElementById('grouped-tabs');
     for (const domain in groupedTabs) {
-        const domainElement = document.createElement('h2');
+        const domainElement = document.createElement('h3');
         domainElement.textContent = domain;
         container.appendChild(domainElement);
 

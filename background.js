@@ -21,15 +21,6 @@ browser.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
         return groups;
       }, {});
   
-      // If the updated tab is the active tab, capture an image of it
-      if (tab.active) {
-        browser.tabs.captureVisibleTab(tab.windowId, { format: 'jpeg', quality: 10 }).then((dataUrl) => {
-          // Store the thumbnail data URL
-          tab.thumbnail = dataUrl;
-        });
-      }
-  
-      // Do something with the grouped tabs
     });
   };
       

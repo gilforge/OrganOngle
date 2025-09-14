@@ -29,7 +29,7 @@ Extension Firefox améliorée pour la gestion et l'organisation des onglets.
 3. Cliquez sur "Activer"
 
 ## Installation manuelle
-1. Téléchargez le dossier `OrganOngle`
+1. Téléchargez le dossier [OrganOngle_v2.0.zip](https://github.com/gilforge/OrganOngle/blob/master/OrganOngle_v2.0.zip)
 2. Ouvrez Firefox et allez dans `about:debugging`
 3. Cliquez sur "Ce Firefox" dans la barre latérale
 4. Cliquez sur "Charger un module temporaire..."

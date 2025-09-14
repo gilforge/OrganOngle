@@ -1,25 +1,38 @@
 {
     "manifest_version": 2,
-    "name": "OrganOngle",
-    "version": "1.0",
-    "description": "Regroupe les onglets ouverts par domaine, en grille, et permet de les fermer à la volée.",
-    "author": "Gilles Aubin",
+    "name": "OrganOngle v2",
+    "version": "2.3",
+    "description": "Regroupe les onglets par domaine, par sujet, et supprime les doublons avec vrais groupes d'onglets.",
     "permissions": [
-      "tabs",
-      "activeTab",
-      "downloads"
+        "tabs",
+        "activeTab",
+        "downloads",
+        "storage",
+        "tabGroups"
     ],
     "browser_action": {
-      "default_icon": {
-        "48": "icons/icon.png"
-      },
-      "default_title": "OrganOngle",
-      "default_popup": "popup/popup.html"
+        "default_icon": {
+            "48": "icons/icon.png"
+        },
+        "default_title": "OrganOngle v2",
+        "default_popup": "popup/popup.html"
     },
-      "background": {
-      "scripts": ["background.js"]
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": false
     },
     "icons": {
-      "48": "icons/icon.png"
-    }
-  }
+        "48": "icons/icon.png"
+    },
+    "web_accessible_resources": [
+        "stopwords_fr.json",
+        "stopwords/config.json",
+        "stopwords/french_basic.json",
+        "stopwords/english_basic.json",
+        "stopwords/web_interface.json",
+        "stopwords/content_learning.json",
+        "stopwords/technical_terms.json",
+        "debug/test_storage.html",
+        "debug/diagnostic_popup.html"
+    ]
+}

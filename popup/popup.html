@@ -1,16 +1,56 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html>
 <head>
-    <title>OrganOngle</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="popup.css"/>
+    <title>OrganOngle v2</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="popup.css"/>
 </head>
 <body>
-  <div id="popupHTML">
-  <h1>OrganOngle</h1>
-  <div id="grouped-tabs"></div>
-  <script src="popup.js"></script>
-  </div>
+    <h1>OrganOngle v2</h1>
+    
+    <!-- Navigation tabs -->
+    <div class="tabs">
+        <button class="tab-button active" data-tab="domain">Par domaine</button>
+        <button class="tab-button" data-tab="subject">Par sujet</button>
+        <button class="tab-button" data-tab="duplicates">Doublons</button>
+        <button class="tab-button" data-tab="stopwords">Filtres</button>
+    </div>
+    
+    <!-- Tab content containers -->
+    <div id="domain-tab" class="tab-content active">
+        <div id="grouped-tabs"></div>
+    </div>
+    
+    <div id="subject-tab" class="tab-content">
+        <div class="subject-controls">
+            <button id="sort-subjects-alpha" class="sort-button">Trier par ordre alphabétique</button>
+            <button id="sort-subjects-count" class="sort-button active">Trier par nombre d'onglets</button>
+        </div>
+        <div id="subject-groups"></div>
+        <div id="loading-subjects" class="loading">Analyse des sujets en cours...</div>
+    </div>
+    
+    <div id="duplicates-tab" class="tab-content">
+        <div id="duplicate-groups"></div>
+        <div id="loading-duplicates" class="loading">Recherche de doublons...</div>
+        <div class="actions">
+            <button id="remove-selected-duplicates" class="action-button">Supprimer sélectionnés</button>
+            <button id="select-all-duplicates" class="action-button secondary">Tout sélectionner</button>
+        </div>
+    </div>
+    
+    <div id="stopwords-tab" class="tab-content">
+        <div class="stopwords-simple">
+            <h3>🚫 Mots interdits</h3>
+            
+            <div class="count-info" id="count-info">0 mots personnalisés</div>
+            
+            <div class="words-container" id="custom-stopwords-list">
+                <div class="empty-state">Chargement...</div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="popup.js"></script>
 </body>
 </html>

@@ -1,0 +1,30 @@
+# Fichiers de développement et travail
+projet.md
+*.md.backup
+*_backup.*
+*_old.*
+*_temp.*
+*_test.*
+
+# Dossiers de développement  
+temp_cleanup/
+debug/
+tests/
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+console.log
+
+# Archives et zips de dev
+*.zip.backup
+dev_*.zip
+
+# Documentation interne
+NOTES.md
+TODO.md
+DEVELOPPEMENT.md

@@ -1,0 +1,34 @@
+{
+  "stopwords_files": [
+    {
+      "file": "french_basic.json",
+      "name": "Français de base",
+      "description": "Articles, pronoms, prépositions françaises",
+      "enabled": true,
+      "user_editable": false
+    },
+    {
+      "file": "english_basic.json", 
+      "name": "Anglais de base",
+      "description": "Mots anglais les plus courants",
+      "enabled": true,
+      "user_editable": false
+    },
+    {
+      "file": "web_interface.json",
+      "name": "Interface web",
+      "description": "Termes d'interface et de navigation web",
+      "enabled": true,
+      "user_editable": false
+    },
+    {
+      "file": "content_learning.json",
+      "name": "Contenu éducatif",
+      "description": "Tutoriels, guides, formation, qualificatifs génériques",
+      "enabled": true,
+      "user_editable": false
+    }
+  ],
+  "technical_terms_file": "technical_terms.json",
+  "technical_terms_description": "Termes techniques reconnus (ne sont PAS filtrés)"
+}

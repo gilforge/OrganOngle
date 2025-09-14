@@ -1,0 +1,15 @@
+[
+  "javascript", "python", "java", "typescript", "php", "ruby", "swift", 
+  "kotlin", "dart", "rust", "golang", "scala", "clojure", "haskell",
+  "react", "vue", "angular", "svelte", "ember", "backbone", "jquery",
+  "django", "flask", "fastapi", "express", "spring", "laravel", "rails",
+  "mysql", "postgresql", "mongodb", "redis", "sqlite", "elasticsearch",
+  "docker", "kubernetes", "git", "github", "gitlab", "bitbucket",
+  "html", "css", "sass", "scss", "less", "bootstrap", "tailwind", 
+  "nodejs", "npm", "yarn", "webpack", "vite", "babel", "rollup",
+  "api", "rest", "graphql", "json", "xml", "sql", "nosql",
+  "linux", "ubuntu", "debian", "centos", "fedora", "windows", "macos",
+  "android", "ios", "chrome", "firefox", "safari", "edge",
+  "photoshop", "illustrator", "figma", "sketch", "blender", "unity", "unreal",
+  "vscode", "intellij", "webstorm", "phpstorm", "pycharm", "sublime", "atom"
+]
